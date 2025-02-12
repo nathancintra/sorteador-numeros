@@ -5,6 +5,12 @@ function sortear(){
 
     let sorteados = [];
     let numero;
+    let intervalo = parseInt(de + ate);
+
+    if (quantidade >= intervalo) {
+        alert("A quantidade de números selecionada é maior do que o intervalo disponível.");
+        return;
+    }
 
     for (let i = 0; i < quantidade; i++){
         numero = numeroAleatorio(de, ate);
